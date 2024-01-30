@@ -1,0 +1,36 @@
+.footer {
+  .navbar__list__footer {
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+
+    background-color: #790d6a;
+    box-shadow: inset 3px -3px 30px #bd07a5, inset -4px 4px 4px #ffffff,
+      0 0 20px #bd07a5;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    text-align: center;
+
+    list-style: none;
+
+    display: flex;
+    justify-content: space-around;
+
+    .navbar__item {
+      margin: 0.5rem;
+      background-color: #790d6a;
+      transition: background-color 0.3s;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        border-radius: 0.25rem;
+
+        &:hover {
+          background-color: #a51492;
+        }
+      }
+    }
+  }
+}

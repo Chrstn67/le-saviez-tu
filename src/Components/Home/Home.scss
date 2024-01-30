@@ -1,0 +1,104 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+
+  .description {
+    background-color: #9b59b6; // Violet
+    color: #fff;
+    padding: 1em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+
+    p {
+      font-size: 1.5em;
+      margin: 0;
+    }
+  }
+
+  .category-selector {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    h2 {
+      font-size: 1.2em;
+      margin-bottom: 1em;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      li {
+        margin: 0.5em;
+
+        button {
+          background-color: #e8d5e9; // Mauve
+          color: #630a0a; // Rouge foncé
+          padding: 0.5em 1em;
+          border: none;
+          border-radius: 0.5em;
+          cursor: pointer;
+          font-size: 1em;
+
+          &:hover {
+            background-color: #9b59b6; // Violet (hover)
+          }
+        }
+      }
+    }
+  }
+
+  .random-ideas {
+    background-color: #e8d5e9; // Mauve
+    color: #630a0a; // Rouge foncé
+    padding: 1em;
+    border-radius: 1em;
+    width: 100%;
+
+    h2 {
+      font-size: 1.2em;
+      margin-bottom: 1em;
+      text-align: center;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      li {
+        margin: 0.5em;
+        width: 20em;
+
+        .card {
+          background-color: #fff; // Couleur de fond de la carte
+          border-radius: 1em;
+          padding: 1em;
+          box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1); // Ombre de la carte
+
+          p {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .category-selector,
+    .random-ideas {
+      width: 90%;
+    }
+  }
+}
